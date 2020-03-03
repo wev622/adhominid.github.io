@@ -1,0 +1,25 @@
+<!--adding a border-->
+table, th, td {
+  border: 1px solid black;
+}
+
+<!--adding a collapsed border-->
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+<!--adding cell padding-->
+table, th, td {
+  padding: 15px;
+}
+
+<!--left-align headings-->
+th {
+  text-align: left;
+}
+
+<!--adding border spacing-->
+table {
+  border-spacing: 5px;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>1. Forms</title>
+  <link rel="stylesheet" href="code-style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<span id="top"></span>
+
+<a href="0-index.html">Index</a>
+
+<h1>1. Forms</h1>
+
+<h3>Contents</h3>
+
+<ul type="none">
+<li><a href=#1.1>1.1 The &lt;form&gt; Element</a></li>
+<li><a href=#1.2>1.2 The &lt;input&gt; Element</a></li>
+<li><a href=#1.3>1.3 Text Fields</a></li>
+<li><a href=#1.4>1.4 The &lt;label&gt; Element</a></li>
+<li><a href=#1.5>1.5 Radio Buttons</a></li>
+<li><a href=#1.6>1.6 The Submit Button</a></li>
+<li><a href=#1.7>1.7 The Action Attribute</a></li>
+<li><a href=#1.8>1.8 The Target Attribute</a></li>
+<li><a href=#1.9>1.9 The Method Attribute</a>
+  <ul type="none">
+    <li><a href=#1.9.1>1.9.1 When to Use GET?</a></li>
+    <li><a href=#1.9.2>1.9.2 When to Use POST?</a></li>
+  </ul></li>
+<li><a href=#1.10>1.10 The Name Attribute</a></li>
+<li><a href=#1.11>1.11 All &lt;form&gt; Attributes</a></li>
+</ul>
+
+
+
+
+
+<h2 id="1.1">1.1 The &lt;form&gt; Element</h2>
+
+<p>The HTML <code>&lt;form&gt;</code> element defines a form that is used to collect user input:<br /><br />
+
+<code id="chu"><textarea><form>
+.
+form elements
+.
+</form></textarea></code><br /><br />
+
+An HTML form contains <b>form elements</b> - like text fields, checkboxes, radio buttons, submit buttons etc.</p>
+
+<h2 id="1.2">1.2 The &lt;input&gt; Element</h2>
+
+<p>The &lt;input&gt; element is displayed in several ways depending on the <b>type</b> attribute. E.g.:</p>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>&lt;input type="text"&gt;</td>
+    <td>Defines a single-line text input field</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="radio"&gt;</td>
+    <td>Defines a radio button (for selecting one of many choices)</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="submit"&gt;</td>
+    <td>Defines a submit button (for submitting the form)</td>
+  </tr>
+</table>
+
+<h2 id="1.3">1.3 Text Fields</h2>
+
+<p><code>&lt;input type="text"&gt;</code> defines a single-line input field for <b>text input</b>. E.g.:<br /><br />
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form><br /><br />
+
+<code id="chu"><textarea><form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form></textarea></code>
+
+<h2 id="1.4">1.4 The &lt;label&gt; Element</h2>
+
+<p>The &lt;label&gt; tag defines a label - when the text is clicked on it toggles the radio button/checkbox.<br /><br />
+
+The <code>&lt;for&gt;</code> attribute of the &lt;label&gt; tag should be equal to the <code>id</code> attribute of the &lt;label&gt; element to bind them together.</p>
+
+<h2 id="1.5">1.5 Radio Buttons</h2>
+
+<p>&lt;input type="radio"&gt; defines a <b>radio button</b> - lets a user select <i>one</i> of a limited number of choices. E.g.:<br /><br />
+
+<form>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+</form><br/><br/>
+
+<code id="chu"><textarea><form>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+</form></textarea></code></p>
+
+<h2 id="1.6">1.6 The Submit Button</h2>
+
+<code>&lt;input type="submit"&gt;</code> defines a button for <b>submitting</b> the form data to a <b>form-handler</b>.<br /><br />
+
+The form-handler is typically a page on the server with a script for processing input data - the form-handler is specified in the form's <b>action</b> attribute. E.g.:<br /><br />
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" value="John"><br />
+  <label for="lname">Last name:</label><br />
+  <input type="text" id="lname" name="lname" value="Doe"><br /><br />
+  <input type="submit" value="Submit">
+</form><br /><br />
+
+<code id="chu"><textarea><form action="/action_page.php">
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" value="John"><br />
+  <label for="lname">Last name:</label><br />
+  <input type="text" id="lname" name="lname" value="Doe"><br /><br />
+  <input type="submit" value="Submit">
+</form></textarea></code></p>
+
+<h2 id="1.7">1.7 The Action Attribute</h2>
+
+<p>The <code>action</code> attribute defines the action to be performed when the form is submitted - usually the form data is sent to a page on the server when the user clicks on the submit button.<br /><br />
+
+In the example above, the form data is sent to a page on the server called "/action_page.php". This page contains a server-side script that handles the form data:<br /><br />
+
+<code id="chu"><textarea><form action="/action_page.php"></textarea></code><br /><br />
+
+If the <code>action</code> attribute is omitted, the action is sent to the current page.</p>
+
+<h2 id="1.8">1.8 The Target Attribute</h2>
+
+<p>The <code>target</code> attribute specifies if the submitted results will open in a new browser tab, a frame, or in the current window - the default value is "<code>_self</code>" which means the form will be submitted in the current window.<br /><br />
+
+To make the form result open in a new browser tab, use the value "<code>_blank</code>". E.g.:<br /><br />
+
+<code id="chu"><textarea><form action="/action_page.php" target="_blank"></textarea></code><br /><br />
+
+Other legal values are "<code>_parent</code>", "<code>_top</code>" or a name representing the name of an iframe.</p>
+
+<h2 id="1.9">1.9 The Method Attribute</h2>
+
+<p>The <code>method</code> attribute specifies the HTTP method (<b>GET</b> or <b>POST</b>) to be used when submitting the form data. E.g.:<br /><br />
+
+<code id="chu"><textarea><form action="/action_page.php" method="get"></textarea></code><br /><br />
+
+or:<br /><br />
+
+<code id="chu"><textarea>form action="/action_page.php" method="post"></textarea></code></p>
+
+<h3 id="1.9.1">1.9.1 When to Use GET?</h3>
+
+<p>The default HTTP method when submitting form data is GET - however, when GET is used, the form data will be <b>visible in the page's address field</b>:<br /><br >
+
+<code id="chu">/action_page.php?firstname=John&lastname=Doe</code></p>
+
+<h3 id="1.9.2">1.9.2 When to Use POST?</h3>
+
+<p>Always use POST if the form data contains sensitive or personal information - the POST method does not display the form data in the page address field.</p>
+
+<h2 id="1.10">1.10 The Name Attribute</h2>
+
+<p>Each input field must have a <code>name</code> attribute to be submitted - if the <code>name</code> attribute is omitted, the data of that input field will not be sent at all. E.g.:<br /><br />
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" value="John"><br /><br />
+  <input type="submit" value="Submit">
+</form>
+
+<code id="chu"><textarea><form action="/action_page.php">
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" value="John"><br /><br />
+  <input type="submit" value="Submit">
+</form></textarea></code>
+
+<h2 id="1.11">1.11 All &lt;form&gt; Attributes</h2>
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>accept-charset</td>
+    <td>Specifies the charset used in the submitted form (default: the page charset)</td>
+  </tr>
+  <tr>
+    <td>action</td>
+    <td>Specifies an address (url) where to submit the form (default: the submitting page)</td>
+  </tr>
+  <tr>
+    <td>autocomplete</td>
+    <td>Specifies if the browser should autocomplete the form (default: on)</td>
+  </tr>
+  <tr>
+    <td>enctype</td>
+    <td>Specifies the encoding of the submitted data (default: is url-encoded)</td>
+  </tr>
+  <tr>
+    <td>method</td>
+    <td>Specifies the HTTP method used when submitting the form (default: GET)</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>Specifies a name used to identify the form(for DOM usage: document.forms.name)</td>
+  </tr>
+  <tr>
+    <td>novalidate</td>
+    <td>Specifies that the browser should not validate the form.</td>
+  </tr>
+  <tr>
+    <td>target</td>
+    <td>Specifies the target of the address in the action attribute (default: _self)</td>
+  </tr>
+</table>
+
+<p><a href=#top>Back to top</a></p>
+</body>
+</html>

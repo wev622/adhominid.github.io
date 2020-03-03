@@ -1,0 +1,75 @@
+body {
+  padding: 60px;
+  font-family: Arial;
+}
+
+#chu {
+  padding: 10px;
+  background-color: #ECECEC;
+  border-style: ridge;
+  display: block;
+}
+
+textarea {
+  height:100px;
+  width:400px;
+}
+
+<!--adding a border-->
+table, th, td {
+  border: 1px solid black;
+}
+
+<!--adding a collapsed border-->
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+<!--adding cell padding-->
+table, th, td {
+  padding: 15px;
+}
+
+<!--left-align headings-->
+th {
+  text-align: left;
+}
+
+<!--adding border spacing-->
+table {
+  border-spacing: 5px;
+}
+
+.chunk-code, .chunk{
+  font-family:Consolas;"courier new";font-size:16px
+}
+
+.chunk-code{
+  color:brown;
+  width:auto;
+  background-color:#fff;
+  padding:8px 12px;
+  border-left:4px solid orange;
+  word-wrap:break-word
+}
+
+.chunk{
+  color:red;
+  background-color:#f1f1f1;
+  padding-left:4px;
+  padding-right:4px;
+  font-size:100%
+}
+
+.blue{
+  color:blue;
+}
+
+.red{
+  color:red;
+}
+
+.black{
+  color:black;
+}

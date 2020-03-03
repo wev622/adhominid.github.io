@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Types</title>
+    <link rel="stylesheet" href="code-style.css">
+  </head>
+  
+  <body>
+
+<a href="0-index.html">Back to index</a>
+
+    <h1>
+      Input Types
+    </h1>
+    
+    <p>
+      This chapter describes the different input types for the <span class="chunk">&lt;input&gt;</span> element.<br><br>Here are the different input types you can use in HTML:
+      <ul>
+        <li><span class="chunk">&lt;input type="button"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="checkbox"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="color"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="date"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="datetime-local"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="email"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="file"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="hidden"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="image"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="month"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="number"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="password"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="radio"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="range"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="reset"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="search"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="submit"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="tel"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="text"&gt;</span></li>
+		<li><span class="chunk">&lt;input type="time"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="url"&gt;</span></li>
+        <li><span class="chunk">&lt;input type="week"&gt;</span></li>
+    </ul>
+    </p>
+    
+ <h2>
+   Input Type Text
+  </h2>
+  <p>
+    <span class="chunk">&lt;input type="text"&gt;</span> defines a <b>single-line text input field:</b><br><br>
+    <div class="chunk-code">
+      <span class="blue">&lt;</span>form<span class="blue">&gt;</span><br>
+      &nbsp;&nbsp;<span class="blue">&lt;</span>label <span class="red">for</span><span class="blue">="fname"&gt;<span class="black">First name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;</span><br>
+      &nbsp;&nbsp;<span class="blue">&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="fname" <span class="red">name</span>="fname"&gt;&lt;</span>br<span class="blue">&gt;</span><br>
+      &nbsp;&nbsp;<span class="blue">&lt;</span>label <span class="red">for</span><span class="blue">="lname"&gt;<span class="black">Last name:</span></span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+      &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="lname" <span class="red">name</span>="lname"&gt;<br>
+      &lt;</span>/form<span class="blue">&gt;</span>
+  </div><br>
+  <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form><br><br>
+  </p>
+<h2>
+  Input Type Password    
+</h2>
+<p>
+  <span class="chunk">&lt;input type="password"&gt;</span> defines a <b>password field</b>:<br><br>
+  
+  <div class="chunk-code">
+      <span class="blue">&lt;</span>form<span class="blue">&gt;</span><br>
+      &nbsp;&nbsp;<span class="blue">&lt;</span>label <span class="red">for</span><span class="blue">="username"&gt;<span class="black">Username:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;</span><br>
+      &nbsp;&nbsp;<span class="blue">&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="username" <span class="red">name</span>="username"&gt;&lt;</span>br<span class="blue">&gt;</span><br>
+      &nbsp;&nbsp;<span class="blue">&lt;</span>label <span class="red">for</span><span class="blue">="pwd"&gt;<span class="black">Password:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+      &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="password" <span class="red">id</span>="pwd" <span class="red">name</span>="lname"&gt;<br>
+      &lt;</span>/form<span class="blue">&gt;</span>
+  </div><br>
+The characters in a password field are masked (shown as asterisks or circles).
+</p>
+
+<form>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="lname">
+</form>
+
+<h2>
+  Input Type Submit
+</h2>
+<p>
+  <span class="chunk">&lt;input type="submit"&gt;</span> defines a button for <b>submitting</b> form data to a <b>form-handler</b>.<br><br>The form-handler is typically a server page with a script fo processing input data - the form-handler is specified in the form's <span class="chunk">action</span> attribute:<br><br>
+  
+  <div class="chunk-code">
+    <span class="blue">&lt;</span>form <span class="red">action</span><span class="blue">="/action_page.php"&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="fname"&gt;<span class="black">First name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="fname" <span class="red">name</span>="fname" <span class="red">value</span>="John"&gt;&lt;</span>br<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="lname"&gt;<span class="black">Last name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="lname" <span class="red">name</span>="lname" <span class="red">value</span>="Doe"&gt;&lt;</span>br<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="submit" <span class="red">value</span>="Submit"&gt;<br>
+    
+    &lt;</span>/form<span class="blue">&gt;</span>
+</div><br>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form><br><br>
+
+If you omit the submit button's value attribute, the button will get a default text:<br><br>
+
+  <div class="chunk-code">
+    <span class="blue">&lt;</span>form <span class="red">action</span><span class="blue">="/action_page.php"&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="fname"&gt;<span class="black">First name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="fname" <span class="red">name</span>="fname" <span class="red">value</span>="John"&gt;&lt;</span>br<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="lname"&gt;<span class="black">Last name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="lname" <span class="red">name</span>="lname" <span class="red">value</span>="Doe"&gt;&lt;</span>br<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="submit"&gt;<br>
+    
+    &lt;</span>/form<span class="blue">&gt;</span>
+</div><br>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit">
+</form><br><br>
+</p>
+
+<h2>
+  Input Type Reset
+</h2>
+<p>
+  <span class="chunk">&lt;input type="reset"</span> defines a <b>reset button</b> that will reset all form values to their default values:<br><br>
+  
+  <div class="chunk-code">
+    <span class="blue">&lt;</span>form <span class="red">action</span><span class="blue">="/action_page.php"><br>
+    
+    &nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="fname"&gt;<span class="black">First name:</span>&lt;</span>/label&lt;<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="fname" <span class="red">name</span>="fname" <span class="red">value</span>="John"&gt;&lt;</span>br<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="lname"&gt;<span class="black">Last name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="lname" <span class="red">name</span>="lname" <span class="red">value</span>="Doe"&gt;&lt;</span>br<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="submit" <span class="red">value</span>="Submit"&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="reset"&gt;<br>
+    
+    &lt;</span>/form<span class="blue">&gt;</span>
+</div>
+<form action="/action_page.php">
+  <label for="fname">First name:</label<><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form><br><br>
+  
+  If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.
+</p>
+<h2>
+  Input Type Radio
+</h2>
+<p>
+  <span class="chunk">&lt;input type="radio"&gt;</span> defines a <b>radio button</b> - they only let a user select one of a limited number of choices:<br><br>
+  
+  <div class="chunk-code">
+      <span class="blue">&lt;</span>form<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="radio" <span class="red">id</span>="male" <span class="red">name</span>="gender" <span class="red">value</span>="male"&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="male"&gt;<span class="black">Male</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="radio" <span class="red">id</span>="female" <span class="red">name</span>="gender" <span class="red">value</span>="female"&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="female"&gt;<span class="black">Female</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="radio" <span class="red">id</span>="other" <span class="red">name</span>="gender" <span class="red">value</span>="other"&gt;<br>
+    
+    &nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="other"&gt;<span class="black">Other</span>&lt;</span>/label<span class="blue">&gt;<br>
+    
+    &lt;</span>/form<span class="blue">&gt;</span>
+</div><br>
+
+<form>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+</form>
+
+</p>
+
+  
+
+
+</body>
+</html>

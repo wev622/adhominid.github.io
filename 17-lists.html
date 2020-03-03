@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>17. Lists</title>
+  <link rel="stylesheet" href="styles-2.css">
+</head>
+
+<body>
+
+<a href="0-index.html">Index</a>
+
+<h3>17. Lists<h3>
+
+<h4>Unordered List</h4>
+
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<table style="width:100%">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>£50</td>
+  </tr>
+</table>  
+
+<h5>Choose List Item Marker</h5>
+
+<p>Using CSS <i>list-style-type</i> property:
+<table style="width:100%">
+  <tr>
+    <th>Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Disc</td>
+    <td>Sets the list item marker to a bullet (default)</td>
+  </tr>
+  <tr>
+    <td>Circle</td>
+    <td>Sets the list item marker to a circle</td>
+  </tr>
+  <tr>
+    <td>Square</td>
+    <td>Sets the list item marker to a square</td>
+  </tr>
+  <tr>
+    <td>None</td>
+    <td>The list items will not be marked</td>
+  </tr>
+</table>
+
+<h4>Ordered List</h4>
+
+<p>An ordered list starts with the <i>ol</i> tag - each lits item starts with the <i>li</i> tag.
+
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h5>The Type Attribute</h5>
+
+<p>The <i>type</i> attribute of the <i>ol</i> tag, defines the type of list marker:
+
+<table style="width:100%">
+  <tr>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>type="1"</td>
+    <td>The list items will be numbered with numbers (default)</td>
+  </tr>
+  <tr>
+    <td>type="A"</td>
+    <td>The list items will be numbered with uppercase letters</td>
+  </tr>
+  <tr>
+    <td>type="a"</td>
+    <td>The list items will be numbered with lowercase letters</td>
+  </tr>
+  <tr>
+    <td>type="I"</td>
+    <td>The list items will be numbered with uppercase roman numbers</td>
+  </tr>
+  <tr>
+    <td>type="i"</td>
+    <td>The list items will be numbered with lowercase roman numbers</td>
+  </tr>
+</table>
+
+<h4>Description Lists</h4>
+
+<p>A description list of terms, with a description of each of them.<br></br>The <i>dl</i> tag defines the description list, the <i>dt</i> tag defines the term (name), and the <i>dd</i> tag describes each term.</p>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+
+<h4>Nested HTML Links</h4>
+
+<p>List can be nested (lists inside lists):</p>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+<h4>Control List Counting</h4>
+
+<p>By default, an ordered list will start counting from 1, however can use the <i>start</i> attribute to start from specified number:</p>
+
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h4>Horizontal Lists with CSS</h4>
+
+<p>HTML lists can be styled in many different ways with CSS - one way is horizontally to create a navigation menu (see horizontal-list.html)</p>
+
+</body>
+</html>

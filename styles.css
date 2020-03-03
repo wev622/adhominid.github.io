@@ -1,0 +1,53 @@
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+#p01 {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+  border: 1px solid powderblue;
+  padding: 30px;
+}
+#p02{
+  color: blue;
+  margin: 50px;
+}
+p.customclass {
+  color: red;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#a01:link, #a01:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+#a01:hover, #a01:active {
+  background-color: red;
+}
+div {
+  background-image: url('photo-test.png');
+}

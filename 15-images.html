@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>15. Images</title>
+  <link rel="stylesheet" href="code-style.css">
+</head>
+
+<body>
+
+<a href="0-index.html">Index</a>
+
+<h3>15. Images</h3>
+
+<h4>Image Floating</h4>
+
+<p>Use the CSS <i>float</i> property to let the iamge float to the right or to the left of a text:</p>
+
+<p><img src="photo-test.png" alt="Abstract Oil" style="float:right;width:42px;height:42px;">The image will float to the right of the text.</p><br>
+<p><img src="photo-test.png" alt="Abstract Oil" style="float:left;width:42px;height:42px;">The image will float to the left of the text.</p><br>
+
+<h4>HTML Screen Readers</h4>
+
+<p>A screen reader is a program that reads the HTML code, converts the text, and allows the user to <q>listen</q> to the content. Screen readers are useful for people who are visually impaired or learning disabled.</p>
+
+<h4>Image Maps</h4>
+
+<p>The <i>map</i> tag defines an image-map. An image-map is an image with clickable areas.</p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.hrm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+<h5>The Shapes</h5>
+<p>You must define the shape of the area, and you can choose one of these values:</p>
+<ui>
+  <li><i>rect</i> - defines a rectangular region</li>
+  <li><i>circle</i> - defines a circular region</li>
+  <li><i>poly</i> - defines a polygonal</li>
+  <li><i>default</i> - defines the entires region</li>
+</ui>
+
+<h5>Coordinates</h5>
+<p>Must define coordinates to be able to place the clickable area on the image - the coordinates come in pairs, one for the x-axis and one for the y-axis<br></br>For circles, the notation goes: "x, y, radius".
+
+<h5>Image Map & JavaScript</h5>
+
+<p>A clickable area does not have to be a link to another page, it can also trigger a JavaScript function.<br></br>Add a <i>click</i> event on the <i>area</i> element to execute a JavaScript function:</p>
+
+<area shape="circle" coords="337,300,44" onclick="myFunction()">
+
+<hr>
+
+<h3>HTML Background Images</h3>
+<p>A background image can be specified on almost any HTML element - use the CSS property <i>background-image</i>.</p>
+
+<div style="background-image: url('photo-test.png');">
+
+</body>
+</html>

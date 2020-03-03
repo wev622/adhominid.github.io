@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>14. Links</title>
+  <link rel="stylesheet" href="code-style.css">
+</head>
+
+<body>
+
+<a href="0-index.html">Index</a>
+
+<h3>14. Links</h3>
+
+<p>HTML links are hyperlinks - can click and jump to another document</p>
+
+<h4>Syntax</h4>
+
+<a href="url">link text</a>
+
+<h4>Local Links</h4>
+
+<p>A local link (link to the same website) is specified with a relative URL (without https://www...)</p>
+
+<a href="html_images.asp">HTML Images</a>
+
+<h4>The target Attribute</h4>
+
+<p>The <i>target</i> attribute specifies where to open the linked document - can have one of the following values:
+<ul>
+  <li><b>_blank</b> - opens the linked document in a new window or tab</li>
+  <li><b>_self</b> - opens the linked document in the same window/tab as it was clicked (this is default)</li>
+  <li><b>_parent</b> - opens the linked document in the parent frame</li>
+  <li><b>_top</b> - opens the linked document in a named frame
+</ul>
+
+<a href="https://www.w3schools.com/" target="_blank">Blank link</a><br>
+<a href="https://www.w3schools.com/html/" target="_top">Top link</a>
+
+<h4>Image as Link</h4>
+
+<a href="https://www.w3schools.com/html/html_links.asp">
+  <img src="photo-test.png" alt="HTML tutorial" style="width:65px;height:42px;border:0;">
+</a>
+
+<h4>Button as Link</h4>
+
+<button onclick="document.location = 'https://www.w3schools.com/html/html_links.asp'">HTML Tutorial</button>
+
+<h4>Link Titles</h4>
+
+<p>The <i>title</i> attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+<hr>
+
+<h3>HTML Link Colours</h3>
+
+<p>Using CSS to change the colour of links. By default, a link will appear like this:</p>
+<ul>
+  <li>An unvisted link is underlined and blue</li>
+  <li>A visited link is underlined and purple</li>
+  <li>An active link is underlined and red</li>
+</ul>
+<p>Check the style sheet for examples of how to change this.<br></br>Can also make links in the style of a button:</p>
+
+<a id="a01" href="https://www.w3schools.com/">Button Link</a>
+
+<hr>
+
+<h3>HTML Link Bookmarks</h3>
+
+<p>Bookmarks are used to allow readers to jump to specific parts of a Web page - useful if webpage is very long (might be what google uses to isolate parts of a webpage).<br></br> First create the bookmark, then add a link to it. When the link is selected, the page will scroll down or up to the location with the bookmark.
+
+<h4 id="C4">Chapter 4</h2>
+
+<p>Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page (look at the top of the webpage).</p>
+
+<p>You can also add a link to a bookmark on another page.</p>
+
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+</body>
+</html>
