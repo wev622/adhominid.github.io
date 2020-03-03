@@ -39,13 +39,13 @@
 
 <h2 id="1.1">1.1 The &lt;form&gt; Element</h2>
 
-<p>The HTML <code>&lt;form&gt;</code> element defines a form that is used to collect user input:<br /><br />
+<p>The HTML <code>&lt;form&gt;</code> element defines a form that is used to collect user input:<br>
 
 <div class="chunk-code"><span class="blue">&lt;</span>form<span class="blue">&gt;<br>
 <span class="black">.<br>
 form elements<br>
 .<br></span>
-&lt;</span>/form<span class="blue">&gt;</div>
+&lt;</span>/form<span class="blue">&gt;</div><br>
 
 An HTML form contains <b>form elements</b> - like text fields, checkboxes, radio buttons, submit buttons etc.</p>
 
@@ -74,31 +74,31 @@ An HTML form contains <b>form elements</b> - like text fields, checkboxes, radio
 
 <h2 id="1.3">1.3 Text Fields</h2>
 
-<p><code>&lt;input type="text"&gt;</code> defines a single-line input field for <b>text input</b>. E.g.:<br /><br />
+<p><code>&lt;input type="text"&gt;</code> defines a single-line input field for <b>text input</b>. E.g.:<br><br>
 
 <form>
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname">
-</form><br /><br />
+</form><br><br>
 
-<code id="chu"><textarea><form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
-</form></textarea></code>
+<div class="chunk-code"><span class="blue">&lt;</span>form<span class="blue">&gt;<br>
+&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="fname"&gt;<span class="black">First name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="fname" <span class="red">name</span>="fname"&gt;&lt;</span>br<span class="blue">&gt;<br>
+&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="lname"&gt;<span class="black">Last name:</span>&lt;</span>/label<span class="blue">&gt;&lt;br<span class="blue">&gt;<br>
+&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="lname" <span class="red">name</span>="lname"&gt;<br>
+&lt;</span>/form<span class="blue">&gt;</span></div><br>
 
 <h2 id="1.4">1.4 The &lt;label&gt; Element</h2>
 
-<p>The &lt;label&gt; tag defines a label - when the text is clicked on it toggles the radio button/checkbox.<br /><br />
+<p>The &lt;label&gt; tag defines a label - when the text is clicked on it toggles the radio button/checkbox.<br><br>
 
 The <code>&lt;for&gt;</code> attribute of the &lt;label&gt; tag should be equal to the <code>id</code> attribute of the &lt;label&gt; element to bind them together.</p>
 
 <h2 id="1.5">1.5 Radio Buttons</h2>
 
-<p>&lt;input type="radio"&gt; defines a <b>radio button</b> - lets a user select <i>one</i> of a limited number of choices. E.g.:<br /><br />
+<p>&lt;input type="radio"&gt; defines a <b>radio button</b> - lets a user select <i>one</i> of a limited number of choices. E.g.:<br><br>
 
 <form>
   <input type="radio" id="male" name="gender" value="male">
@@ -120,59 +120,59 @@ The <code>&lt;for&gt;</code> attribute of the &lt;label&gt; tag should be equal 
 
 <h2 id="1.6">1.6 The Submit Button</h2>
 
-<code>&lt;input type="submit"&gt;</code> defines a button for <b>submitting</b> the form data to a <b>form-handler</b>.<br /><br />
+<code>&lt;input type="submit"&gt;</code> defines a button for <b>submitting</b> the form data to a <b>form-handler</b>.<br><br>
 
-The form-handler is typically a page on the server with a script for processing input data - the form-handler is specified in the form's <b>action</b> attribute. E.g.:<br /><br />
+The form-handler is typically a page on the server with a script for processing input data - the form-handler is specified in the form's <b>action</b> attribute. E.g.:<br><br>
 
 <form action="/action_page.php">
-  <label for="fname">First name:</label><br />
-  <input type="text" id="fname" name="fname" value="John"><br />
-  <label for="lname">Last name:</label><br />
-  <input type="text" id="lname" name="lname" value="Doe"><br /><br />
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
   <input type="submit" value="Submit">
-</form><br /><br />
+</form><br><br>
 
 <code id="chu"><textarea><form action="/action_page.php">
-  <label for="fname">First name:</label><br />
-  <input type="text" id="fname" name="fname" value="John"><br />
-  <label for="lname">Last name:</label><br />
-  <input type="text" id="lname" name="lname" value="Doe"><br /><br />
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
   <input type="submit" value="Submit">
 </form></textarea></code></p>
 
 <h2 id="1.7">1.7 The Action Attribute</h2>
 
-<p>The <code>action</code> attribute defines the action to be performed when the form is submitted - usually the form data is sent to a page on the server when the user clicks on the submit button.<br /><br />
+<p>The <code>action</code> attribute defines the action to be performed when the form is submitted - usually the form data is sent to a page on the server when the user clicks on the submit button.<br><br>
 
-In the example above, the form data is sent to a page on the server called "/action_page.php". This page contains a server-side script that handles the form data:<br /><br />
+In the example above, the form data is sent to a page on the server called "/action_page.php". This page contains a server-side script that handles the form data:<br><br>
 
-<code id="chu"><textarea><form action="/action_page.php"></textarea></code><br /><br />
+<code id="chu"><textarea><form action="/action_page.php"></textarea></code><br><br>
 
 If the <code>action</code> attribute is omitted, the action is sent to the current page.</p>
 
 <h2 id="1.8">1.8 The Target Attribute</h2>
 
-<p>The <code>target</code> attribute specifies if the submitted results will open in a new browser tab, a frame, or in the current window - the default value is "<code>_self</code>" which means the form will be submitted in the current window.<br /><br />
+<p>The <code>target</code> attribute specifies if the submitted results will open in a new browser tab, a frame, or in the current window - the default value is "<code>_self</code>" which means the form will be submitted in the current window.<br><br>
 
-To make the form result open in a new browser tab, use the value "<code>_blank</code>". E.g.:<br /><br />
+To make the form result open in a new browser tab, use the value "<code>_blank</code>". E.g.:<br><br>
 
-<code id="chu"><textarea><form action="/action_page.php" target="_blank"></textarea></code><br /><br />
+<code id="chu"><textarea><form action="/action_page.php" target="_blank"></textarea></code><br><br>
 
 Other legal values are "<code>_parent</code>", "<code>_top</code>" or a name representing the name of an iframe.</p>
 
 <h2 id="1.9">1.9 The Method Attribute</h2>
 
-<p>The <code>method</code> attribute specifies the HTTP method (<b>GET</b> or <b>POST</b>) to be used when submitting the form data. E.g.:<br /><br />
+<p>The <code>method</code> attribute specifies the HTTP method (<b>GET</b> or <b>POST</b>) to be used when submitting the form data. E.g.:<br><br>
 
-<code id="chu"><textarea><form action="/action_page.php" method="get"></textarea></code><br /><br />
+<code id="chu"><textarea><form action="/action_page.php" method="get"></textarea></code><br><br>
 
-or:<br /><br />
+or:<br><br>
 
 <code id="chu"><textarea>form action="/action_page.php" method="post"></textarea></code></p>
 
 <h3 id="1.9.1">1.9.1 When to Use GET?</h3>
 
-<p>The default HTTP method when submitting form data is GET - however, when GET is used, the form data will be <b>visible in the page's address field</b>:<br /><br >
+<p>The default HTTP method when submitting form data is GET - however, when GET is used, the form data will be <b>visible in the page's address field</b>:<br><br >
 
 <code id="chu">/action_page.php?firstname=John&lastname=Doe</code></p>
 
@@ -182,17 +182,17 @@ or:<br /><br />
 
 <h2 id="1.10">1.10 The Name Attribute</h2>
 
-<p>Each input field must have a <code>name</code> attribute to be submitted - if the <code>name</code> attribute is omitted, the data of that input field will not be sent at all. E.g.:<br /><br />
+<p>Each input field must have a <code>name</code> attribute to be submitted - if the <code>name</code> attribute is omitted, the data of that input field will not be sent at all. E.g.:<br><br>
 
 <form action="/action_page.php">
-  <label for="fname">First name:</label><br />
-  <input type="text" id="fname" value="John"><br /><br />
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" value="John"><br><br>
   <input type="submit" value="Submit">
 </form>
 
 <code id="chu"><textarea><form action="/action_page.php">
-  <label for="fname">First name:</label><br />
-  <input type="text" id="fname" value="John"><br /><br />
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" value="John"><br><br>
   <input type="submit" value="Submit">
 </form></textarea></code>
 
