@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>13. CSS</title>
+  <link rel="stylesheet" href="code-style.css">
+</head>
+
+<body>
+
+<a href="0-index.html">Index</a>
+
+<h1>13. CSS</h1>
+
+<p>CSS stands for <i>Cascading Style Sheets</i>.</p>
+<p>CSS can be added to HTML in 3 ways:</p>
+<ul>
+<li><b>Inline</b> - by using the style attribute in HTML elements</li>
+<li><b>Internal</b> - by using a <i>style</i> element in the <i>head</i> section</li>
+<li><b>External</b> - by using an external CSS file</li>
+</ul>
+
+<h4>Inline CSS</h4>
+
+<h5 style="color:blue;">This is an example of a Blue Heading using inline CSS code</h5>
+
+<h4>Internal CSS</h4>
+
+<p>This involves interaction with the head using a <i>style</i> section - see code</p>
+
+<!--not running this for obvious reasons
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body	{background-color: powderblue;}
+h1	{color: blue;}
+p	{color: red;}
+</style>
+</head>
+<body>
+
+<h5>This is a heading</h5>
+<p>This is a paragraph</p>
+
+</body>
+</html>
+
+-->
+
+<h4>External CSS</h4>
+
+<p>Cannot run this either, but makes use of external .css file - see code in folder - should be influencing this .html document</p>
+
+<!--this is the code you would enter into the main document
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+-->
+
+<!--this is the code that would be entered into the .css file
+
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color red;
+}
+
+-->
+
+<h4>The id Attribute</h4>
+
+<p id="p01">I am different</p>
+
+<p class="customclass">I am an error</p>
+
+</body>
+</html>

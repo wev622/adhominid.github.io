@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>20. Id</title>
+  <link rel="stylesheet" href="code-style.css">
+</head>
+
+<body>
+
+<a href="0-index.html">Index</a>
+
+<h1>20. The id Attribute</h1>
+
+<p>The <code>id</code> attribute specifies a unique id for an HTML element (the value must be unique within the HTML document).<br><br>
+
+The id value can be used by CSS and JavaScript to perform certain tasks for the elemtn with the specific id20:35 20/02/2020 value.<br><br>
+
+In CSS, to select an element with a specific id, write a hash (#) character, followed by the id of the element:<br><br>
+
+<code id="chu"><textarea>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+
+<h1 id="myHeader">My Header</h1>
+</textarea></code>
+
+<h2>Difference between Class and ID</h2>
+
+<p>An HTML element can only have one unique id that belongs to that specific element, while a class name can be used by multiple elements.</p>
+
+<h2>Using the id Attribute in JavaScript</h2>
+
+<p>JavaScript can access an element with a specified id by using the <code>getElementById()</code> method:<br><br>
+
+<code id="chu"><textarea>
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+</textarea></code>
+
+</body>
+</html>
