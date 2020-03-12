@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Attributes</title>
+	<link rel="stylesheet" href="code-style.css">
+</head>
+
+<body>
+
+<a href="html-index.html">Back to HTML Index</a>
+
+<h1>Input Attributes</h1>
+
+<h2>The value Attribute</h2>
+
+<p>The input <span class="chunk">value</span> attribute specifies an initial value for an input field:<br></p>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form><br>
+
+<div class="chunk-code"><span class="blue">&lt;</span>form<span class="blue">&gt;<br>
+	&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="fname"&gt;<span class="black">First name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+	&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="fname" <span class="red">name</span>="fname" <span 	class="red">value</span>="John"&gt;&lt;</span>br<span class="blue">&gt;<br>
+	&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="lname"&gt;<span class="black">Last name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+	&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="lname" <span class="red">name</span>="lname" <span class="red">value</span>="Doe"&gt;<br>
+	&lt;</span>/form<span class="blue">&gt;</span>
+</div>
+
+<hr>
+
+<h2>The readonly Attribute</h2>
+
+<p>The input <span class="chunk">readonly</span> attribute specifies that an input field is <i>read only</i> - cannot be modified (however, a user can tab to it, highlight it, and copy text from it).<br><br>
+
+The value of a read-only input field will be sent when submitting the form!<br></p>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" readonly><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form><br>
+
+<div class="chunk-code"><span class="blue">&lt;</span>form<span class="blue">&gt;<br>
+	&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="fname"&gt;<span class="black">First name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+	&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="fname" <span class="red">name</span>="fname" <span class="red">value</span>="John" <span class="red">readonly</span>&gt;&lt;</span>br<span class="blue">&gt;<br>
+	&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="lname"&gt;<span class="black">Last name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+	&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="lname" <span class="red">name</span>="lname" <span class="red">value</span>="Doe"&gt;<br>
+	&lt;</span>/form<span class="blue">&gt;</span>
+</div>
+
+<hr>
+
+<h2>The disabled Attribute</h2>
+
+<p>The input <span class="chunk">disabled</span> attribute specifies that an input field should be disabled. A disabled input field is unusable and unclickable.<br><br>
+
+The value of a disabled input field will not be sent when submitting the form.<br>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname name="fname" value="John" disabled><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form><br>
+
+<div class="chunk-code"><span class="blue">&lt;</span>form<span class="blue">&gt;<br>
+&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="fname"&gt;<span class="black">First name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="fname <span class="red">name</span>="fname" <span class="red">value</span>="John" <span class="red">disabled</span>&gt;&lt;</span>br<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="lname"&gt;<span class="black">Last name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="lname" <span class="red">name</span>="lname" <span class="red">value</span>="Doe"&gt;<br>
+
+&lt;</span>/form<span class="blue">&gt;</span></div></p>
+
+<hr>
+
+<h2>The size Attribute</h2>
+
+<p>The input <span class="chunk">size</span> attribute specifies the visible width, in characters, of an input field.<br><br>
+
+The default value for <span class="chunk">size</span> is 20.<br>
+
+<div class="note"><b>Note:</b> The <span class="chunk">size</span> attribute works with the following input types: text, search, tel, url, email and password.</div><br>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" size="4">
+</form><br>
+
+<div class="chunk-code"><span class="blue">&lt;</span>form<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="fname"&gt;<span class="black">First name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="fname" <span class="red">name</span>="fname" <span class="red">size</span>="50"&gt;&lt;</span>br<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="pin"&gt;<span class="black">PIN:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="pin" <span class="red">name</span>="pin" <span class="red">size</span>="4"&gt;<br>
+
+&lt;</span>/form<span class="blue">&gt;</span></div></p>
+
+<hr>
+
+<h2>The maxlength Attribute</h2>
+
+<p>The input <span class="chunk">maxlength</span> attribute specifies the maximum number of characters allowed in an input field.<br>
+
+<div class="note"><b>Note:</b> When a <span class="chunk">maxlength</span> is set, the input field will not accept more than the specified number of characters. However, this attribute does not provide any feedback (requires JS if you want to alert the user).</div><br>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" maxlength="4" size="4">
+</form><br>
+
+<div class="chunk-code"><span class="blue">&lt;</span>form<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="fname"&gt;<span class="black">First name:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="fname" <span class="red">name</span>="fname" <span class="red">size</span>="50"&gt;&lt;</span>br<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="pin"&gt;<span class="black">PIN:</span>&lt;</span>/label<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="text" <span class="red">id</span>="pin" <span class="red">name</span>="pin" <span class="red">maxlength</span>="4" <span class="red">size</span>="4"&gt;<br>
+
+&lt;</span>/form<span class="blue">&gt;</span></div></p>
+
+<hr>
+
+<h2>The min and max Attributes</h2>
+
+<p>The input <span class="chunk">min</span> and <span class="chunk">max</span> attributes specify the minimum and maximum values for an input field.<br><br>
+
+The <span class="chunk">min</span> and <span class="chunk">max</span> attributes work with the following input types: number, range, date, datetime-local, month, time and week.<br>
+
+<form>
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+</form><br>
+
+<div class="chunk-code"><span class="blue">&lt;</span>form<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="datemax"&gt;<span class="black">Enter a date before 1980-01-01:</span>&lt;</span>/label<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="date" <span class="red">id</span>="datemax" <span class="red">name</span>="datemax" <span class="red">max</span>="1979-12-31"&gt;&lt;</span>br<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br><br>
+
+
+
+&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="datemin"&gt;<span class="black">Enter a date after 2000-01-01:</span>&lt;</span>/label<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="date" <span class="red">id</span>="datemin" <span class="red">name</span>="datemin" <span class="red">min</span>="2000-01-02"&gt;&lt;</span>br<span class="blue">&gt;&lt;</span>br<span class="blue">&gt;<br><br>
+
+
+
+&nbsp;&nbsp;&lt;</span>label <span class="red">for</span><span class="blue">="quantity"&gt;<span class="black">Quantity (between 1 and 5):</span>&lt;</span>/label<span class="blue">&gt;<br>
+
+&nbsp;&nbsp;&lt;</span>input <span class="red">type</span><span class="blue">="number" <span class="red">id</span>="quantity" <span class="red">name</span>="quantity" <span class="red">min</span>="1" <span class="red">max</span>="5"&gt;<br>
+
+&lt;</span>/form<span class="blue">&gt;</span></div></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
